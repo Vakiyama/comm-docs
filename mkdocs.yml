@@ -1,5 +1,7 @@
 site_name: Change me
 theme: 
+  icon:
+    repo: fontawesome/brands/material/git
   name: material
   features:
     - navigation.tabs
