@@ -13,10 +13,10 @@ repositories.
   local computer.
 
 - The remote repository is where we will save backups and changes to keep
-  things synced across your different devices, and is found on GitHub.
+  things synced across your different devices, and is found on Github.
 
 !!! info
-    Although we will be using GitHub for this guide, one could choose to use GitLab
+    Although we will be using Github for this guide, one could choose to use GitLab
     or any alternative Git repository. One could potentially host their own repository if they'd like,
     but that will be outside the scope of this guide.
 
@@ -140,47 +140,59 @@ begin work:
 !!! warning
     See [troubleshooting](https://test.test) if you're having trouble navigating to your notes directory.
 
-### Check for new changes on remote using fetch
+### Consider what you want to sync
 
-1. Run ```git fetch``` 
+When using Git, we can specify what we would like Git to track using a ```.gitignore``` file.
+In a ```.gitignore``` file, we can specify a series of file paths. Any files found at these
+paths will be ignore by Git when you're adding your changes to remote.
+
+!!! warning
+    ```.gitignore``` is often used in order to keep our secrets, such as passwords and
+    sensitive information secure by not adding them to Github. This is especially imporant
+    when using a public repository, where anyone could see your pushed changes.
+
+In most cases, you'd like to push everything in your repository. 
+
+There are some cases where you may want to add files to your ```.gitignore```.
+
+Since this should be a private repository, we can be less secure about our secrets and passwords,
+although it can be good practice to ignore them either way.
+
+It's also important that we add large files to our ```.gitignore```. Github has a file size
+limit, and even if we aren't hitting the limit, syncing large videos and images can take an extremely
+amount of time.d
+
+Let's say we have a file ```secrets.txt``` where we store sensitive data, and it is located in at
+```notes/intro-to-programming/secrets.txt```.
+
+We also have a large video file ```large-video.mp4``` located at
+```notes/intro-to-programming/large-video.mp4```.
+
+Let's setup Git so that these files are ignored by default.
+
+1. Create a new .gitignore file at ```notes/intro-to-programming/.gitignore```
+2. In the .gitignore file, add the following:
+```
+secrets.txt # sensitive data
+large-video.mp4 # too large!
+```
 
 !!! info
-    ```git fetch``` may have no output. This will happen if there are no new changes and
-    is normal. You can proceed to the next step in this case.
-
-!!! success
-    The following is an example of success output of the ```git fetch``` 
-    command if new changes were found on the remote repository:
+    ```.gitignore``` files have multiple paths! Let's say we have a lot of secrets:
     ```
-    $ path/to/your/notes (main) git fetch
-    remote: Enumerating objects: 13, done.
-    remote: Counting objects: 100% (13/13), done.
-    remote: Compressing objects: 100% (6/6), done.
-    remote: Total 9 (delta 3), reused 9 (delta 3), pack-reused 0
-    Unpacking objects: 100% (9/9), 2.93 KiB | 2.93 MiB/s, done.
-    From https://github.com/your-username/notes
-       4a30534..37487b7  main       -> origin/main
-    ```
-    
-### Pull your newly fetched changes
+    secrets.txt 
+    large-video.mp4
+    evenMoreSecrets.txt
+    tooManySecrets.txt
 
-1. Run ```git pull``` 
+!!! warning
+    Although this protects these files from being on our repository, they won't be synced
+    up across our different devices, as they won't be placed on our remote. For this reason,
+    having a private repository can make secret handling much easier, but large files are still
+    problematic.
 
-!!! info
-    ```git pull``` may output: 
-    ```Already up to date```
-    This signifies that no changes were pulled from remote and you're all synced up.
+### Add your new changes
 
-!!! success
-    The following is an example of success output of the ```git pull``` 
-    command if new changes were found on the remote repository:
-    ```
-    $ path/to/your/notes (main) git pull
-    Updating 7a32534..37eb7b7
-    Fast-forward
-     intro-to-programming/project.js | 68 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-     1 file changed, 68 (+) insertions
-     create mode 100644 docs/initializeRepo.md
-    ```
+At this point, it's good to have a mental checklist before we start adding and pushing our changes.
 
 ## Using a script
