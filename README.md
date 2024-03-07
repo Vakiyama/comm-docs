@@ -99,7 +99,7 @@ Any errors or issues the user runs into in the documentation should lead you her
 Type **cd** followed by a space and your folder name into your command-line:
 `cd <your_folder_name>`
 
-> [!TIP](/llS79s8NTVeHH0mg4_Tv6A)
+> [!TIP] Hello This is a tip you can use 
 
 ### having your shell setup correctly (git bash)
 
