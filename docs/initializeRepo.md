@@ -4,7 +4,7 @@ This section will focus on helping you initialize your GitHub repository. After 
 
 ## Setps to get started
 
-In the introduction, you created a GitHub account and now you will be using that account to initialize your GitHub repository. You will be using Git Bash (or another shell) to run commands.
+In the introduction, you created a GitHub account and now you will be using that account to initialize your GitHub repository. You will be using a shell that was mentioned in the introduction.
 
 ## Step 1: Create a New Repository
 
@@ -34,41 +34,69 @@ Click the `Create repository` button.
   - `mkdir <folder name>`
   - Make sure to `cd` into the directory after you create it
 
-## Step 4: Push an Existing Local Repository
+## Step 5: Push an Existing Local Repository
 
 If you have a local repository to push:
 
-> [!WARNING] Warning
-> Make sure you are in the source directory of your project before running the next command. Failing to do so could hinder your conputers performance. If you made this mistake find a solution in the troubleshooting section.
+!!! warning "Warning"
+
+      Make sure you are in the source directory of your project before running the next command. Failing to do so could hinder your conputers performance. If you made this mistake find a solution in the troubleshooting section.
 
 ```sh
 # Initialize your local directory as a Git repository
 git init
 ```
 
-> [!TIP] Success
-> You know this command ran succesfully if you look at the Explorer and see a file called `package.json`
+!!! success
+
+    You will know this command ran succesfully if you look at the Explorer in VScode and see a "U" beside the files. This means the files were added but they are not being tracked by GitHub yet.
+    ![gitInit](./assets/images/gitInitFeedback.png)
 
 ```sh
 # Add the files in your new local repository
-git add .
-
-# Commit the files that you've staged in your local repository
-git commit -m "First commit"
+# The "." allows you to upload all files in your current working directory.
+git add . 
 ```
 
-> [!NOTE] Remote Url
-> You Remote Url is located in your GitHub repository. Copy and paste it into the command below. 
+!!! success
+
+    You will know this command ran succesfully if you look at the Explorer in VScode and see a "A" beside the files. This means the files were added to the staging area.
+    ![gitInit](./assets/images/gitAddFeedback.png)
+
+# Commit the files that you've staged in your local repository
+
+```sh
+
+git commit -m "First commit"
+
+```
 
 ```sh
 # Add the URL for the remote repository
 git remote add origin <REMOTE_URL>
 ```
 
-> [!NOTE] Master or Main
-> If the command below does not work for you, replace `master` with `main` and try again.
+!!! info "Remote Url"
+
+    You Remote Url is located in your GitHub repository. Copy and paste it into the command below.
+    ![Remote Url](./assets/images/remoteUrl.png)
 
 ```sh
 # Push the changes in your local repository to GitHub
 git push -u origin master
 ```
+
+!!! info "Master or Main"
+
+    If the command below does not work for you, replace `master` with `main` and try again.
+
+## Conclusion
+
+In this section, you will have learned how to:
+
+- Create a new repository
+- Navigate to the directory on you computer
+- Initialize your project with GitHub
+- Add, commit and push your project to the GitHub repository
+
+Nice work! :white_check_mark: You can now move onto the next section.
