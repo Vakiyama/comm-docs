@@ -79,9 +79,14 @@ git commit -m "First commit"
 
 !!! success
 
-    The feednack in the command line will indicate whether the command worked or not. This is what a succesful output looks like.
+    The feedback in the command line will indicate whether the command worked or not. This is what a succesful output looks like.
 
-    ![Git Commit Feedback](./assets/images/gitCommitFeedback.png)
+    ```sh
+    user@DellXPS MINGW64 ~/Term2/Comm/user-documentation (main)
+    $ git commit -m "write a meaningful commit message"
+    [main 82a23ad] write a meaningful commit message
+    1 file changed, 1 insertion(+)
+    ```
 
 ### 4. Add Remote Origin
 
@@ -114,11 +119,11 @@ git push -u origin master
 
 ## Conclusion
 
-In this section, you will have learned how to:
+In this section, you have learned how to:
 
-- Create a new repository
+- Create a new GitHub repository
 - Navigate to the directory on you computer
 - Initialize your project with GitHub
 - Add, commit and push your project to the GitHub repository
 
-Nice work! :white_check_mark: You can now move onto the next section.
+Nice work! :white_check_mark: You can now move onto the next section, [How to use your repository](useRepo.md).
