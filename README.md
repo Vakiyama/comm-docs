@@ -1,5 +1,16 @@
 # Sections
 
+## TODO
+
+*For Byron*
+- [ ] move quick setup to init
+- [ ] change step headers to not include numbers
+
+*For Vitor*
+
+- [ ] finish use git section
+- [ ] consider submodules
+
 To have finished by 2 weeks (March 7th before class).
 
 ## Introduction
