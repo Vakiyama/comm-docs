@@ -3,11 +3,14 @@ theme:
   icon:
     repo: fontawesome/brands/material/git
   name: material
+  footer:
+    text: "Copyright © 2024 - Armaan Brar, Vitor Akiyama, and Byron Dray"
   features:
     # - navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -45,7 +48,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-extra_javascript:
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - javascripts/tablesort.js
+nav:
+  - Introduction: index.md
+  - Initialize Repository: initializeRepo.md
+  - Using Repository: useRepo.md
+  - Using Script: usingScript.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md

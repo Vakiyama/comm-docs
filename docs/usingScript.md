@@ -19,7 +19,7 @@ that is barely used.
 
 - Forgetting to fetch before working on notes sucks. It can cause you to rewrite notes,
 and oftentimes will lead to merge conflicts. We detail how to deal with these in
-our [troubleshooting]() section, but it would be nice if we could avoid this headache
+our [troubleshooting](./troubleshooting.md#pushing-without-fetching-changes) section, but it would be nice if we could avoid this headache
 all together.
 
 We'll use a script that will automate the entire pulling and pushing process for us, avoiding most of these
@@ -102,3 +102,12 @@ repository in a single command.
         This script assumes that you're using ```bash``` as your terminal shell. 
         You can change the path from ```#!/bin/bash``` to ```#!/bin/zsh``` for MacOS if you're
         using ```zsh```.
+
+## Conclusion 
+
+In this section you have learned how to:
+
+- Automate Git commands in order to push local to repository
+    - For Windows, MacOS and Linux   
+
+Congrats, you made it through! ✅

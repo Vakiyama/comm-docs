@@ -72,7 +72,7 @@ begin work:
     You can use a combination of `ls` and `cd` to change into your notes directory, but this is
     outside the scope of this guide.
 !!! warning
-    See [troubleshooting](https://test.test) if you're having trouble navigating to your notes directory.
+    See [troubleshooting](./troubleshooting.md#navigating-to-directory-using-cd-and-ls) if you're having trouble navigating to your notes directory.
 
 ### Check for new changes on remote using fetch
 
@@ -136,7 +136,7 @@ begin work:
     You can use a combination of `ls` and `cd` to change into your notes directory, but this is
     outside the scope of this guide.
 !!! warning
-    See [troubleshooting](https://test.test) if you're having trouble navigating to your notes directory.
+    See [troubleshooting](./troubleshooting.md#navigating-to-directory-using-cd-and-ls) if you're having trouble navigating to your notes directory.
 
 ### Consider what you want to sync
 
@@ -222,7 +222,7 @@ commands:
     in this context. 
 
     !!! info
-        In the [using a script](./using-a-script.md) section we
+        In the [using a script](./usingScript.md) section we
         solve this commit message problem by automatically including a commit message based on the date.
 
  3. Run ```git push```. Your changes should now be up to date with your local machine on
@@ -237,4 +237,16 @@ commands:
         error: failed to push some refs to 'https://github.com/your-username/notes.git
         ```
         You have forgotten to fetch and pull before adding notes or commiting them. This
-        is okay and will happen often. See [troubleshooting]() for help.
+        is okay and will happen often. See [troubleshooting](./troubleshooting.md#missing-credentials) for help.
+
+## Conclusion 
+
+In this section you have learned how to:
+
+- Pulling changes from remote
+- Pushing changes to remote repository
+- Navigating folders and directories
+- Using Git commands 
+
+Nice work! ✅ You can now move onto the next section, [Using a script to automate note syncing](./usingScript.md).
+

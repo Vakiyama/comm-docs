@@ -44,7 +44,19 @@ Attempting to push your work to GitHub without first fetching and pulling the ch
 
 ## Navigating to directory using `cd` and `ls`
 
-If you're encountering difficulties using cd (change directory) and ls (list directory contents) to navigate to your desired location, this section offers guidance to diagnose and solve common issues.
+If you're encountering difficulties using cd (change directory) and ls (list directory contents) to navigate to your desired location, check the solution below.
+
+### Recommended Solution
+
+1. Running `ls` will show you all the contents that are inside the current directory you're in. That means that when you run `cd`, it needs to be followed by one of the items listed by the `ls` command.
+2. If the `ls` command does not list any content that can you want to `cd` into, you may need to run `cd ..` to go back to the parent folder.
+3. Run `pwd` (print working directory) to show the path to the directory that you are currently located in
+
+!!! info
+
+    Pressing `tab` while writing a `cd` command will auto-complete the path name for you.
+
+    Example - Press `tab` with `cd m` will auto-complete to `cd my-bcit-notes` if there are no naming conflicts.
 
 ## Missing credentials
 
