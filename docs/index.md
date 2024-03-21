@@ -27,7 +27,7 @@ This documentations assumes the following:
 
 - [Visual Studio Code](https://code.visualstudio.com/download) or any other code editor
 - [GitHub](https://github.com/) Account
-- A [Shell]() such as [git](https://git-scm.com/downloads) for Windows and Linux, alternatively [zsh]() for MacOS or any other shell that extends [sh]().
+- A [Shell]() such as [git bash](https://git-scm.com/downloads) for Windows and Linux or alternatively [zsh]().
 
 ## Typographical Conventions
 

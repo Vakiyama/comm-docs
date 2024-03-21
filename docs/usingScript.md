@@ -96,5 +96,9 @@ git push origin main
 3. Making sure you're in your notes directory, make it executable: ```chmod +x update_notes.sh```
 
 4. Making sure you're in your notes directory, running ```./update_notes.sh``` should get you synced up with the remote
-repository in a single click.
+repository in a single command.
 
+    !!! warning
+        This script assumes that you're using ```bash``` as your terminal shell. 
+        You can change the path from ```#!/bin/bash``` to ```#!/bin/zsh``` for MacOS if you're
+        using ```zsh```.

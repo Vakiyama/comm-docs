@@ -39,7 +39,7 @@ Click the `Create repository` button.
 
 ### Navigate to the Source Directory (or create one)
 
-1. Open Git Bash (or another shell) and run `cd <path name>` to navigate to the source directory of your project. 
+1. Open Git Bash (or another shell, such as ```zsh```, ```sh```, ```fish```, so on) and run `cd <path name>` to navigate to the source directory of your project. 
    
     - Example: `cd c:/users/user/bcit/comp1310/<directory name>`
 
@@ -101,6 +101,21 @@ git commit -m "First commit"
     [main 82a23ad] write a meaningful commit message
     1 file changed, 1 insertion(+)
     ```
+!!! warning
+    if you see the following output:
+        ```
+        *** Please tell me who you are.
+
+        Run
+
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+
+        to set your account's default identity.
+        Omit --global to set the identity only in this repository.
+        ```
+    It's likely you haven't used git before. See [troubleshooting](../troubleshooting#missing-credentials) for details.
+        
 
 ### Add Remote Origin
 
