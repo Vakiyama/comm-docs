@@ -54,11 +54,11 @@ If you have a local repository to push:
 
 ### Initialize Repository
 
-!!! warning "Warning"
+!!! danger "Warning"
 
       Make sure you are in the source directory of your project before running the next command. Failing to do so could hinder your conputers performance. If you made this mistake find a solution in the [troubleshooting](troubleshooting.md#computer-feels-slower-than-usual) section.
 
-```sh
+```bash
 # Initialize your local directory as a Git repository
 git init
 ```
