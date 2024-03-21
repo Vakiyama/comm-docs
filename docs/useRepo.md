@@ -28,8 +28,8 @@ high level procedure:
 
 By making sure we always **pull** any changes from our other devices onto
 our local device before we start any work, and that we **push** what we've
-done when we finish working, we'll make sure our notes are synced up
-across all of our devices.
+done when we finish working, we'll make sure our notes are seamlessly synced
+across our devices.
 
 ## Directory structure recommendations
 
@@ -76,7 +76,10 @@ begin work:
 
 ### Check for new changes on remote using fetch
 
-1. Run ```git fetch``` 
+```
+# 
+git fetch
+``` 
 
 !!! info
     ```git fetch``` may have no output. This will happen if there are no new changes and
@@ -238,6 +241,3 @@ commands:
         ```
         You have forgotten to fetch and pull before adding notes or commiting them. This
         is okay and will happen often. See [troubleshooting]() for help.
-
-
-## Using a script
