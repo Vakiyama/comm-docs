@@ -238,3 +238,15 @@ commands:
         ```
         You have forgotten to fetch and pull before adding notes or commiting them. This
         is okay and will happen often. See [troubleshooting]() for help.
+
+## Conclusion 
+
+In this section you have learned how to:
+
+- Pulling changes from remote
+- Pushing changes to remote repository
+- Navigating folders and directories
+- Using Git commands 
+
+Nice work! ✅ You can now move onto the next section, [Using a script to automate note syncing](./usingScript.md).
+

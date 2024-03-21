@@ -29,6 +29,13 @@ This documentations assumes the following:
 - [GitHub](https://github.com/) Account
 - A [Shell](./glossary.md) such as [git bash](https://git-scm.com/downloads) for Windows and Linux or alternatively [zsh](https://ohmyz.sh/).
 
+## Procedures Overview
+The order in which to follow this documentation:
+
+- [Initialize Repository](initializeRepo.md)
+- [Using Repository](useRepo.md)
+- [Using Script](usingScript.md)
+
 ## Typographical Conventions
 
 - Some warning code blocks may have links on the bottom to the [Troubleshooting](troubleshooting) page.
@@ -39,9 +46,9 @@ This documentations assumes the following:
 - The success message may display when a command has **no output** in the shell, to help confirm there is no error.
 !!! success
 
-    ```git add .```will have no output, but it will prepare any changes you've made in the repository to be pushed to remote.
-- Comments will contain terminology, each comment will contain the term with a Link to the glossary
-  > [term]()
+    ```git add .``` will have no output, but it will prepare any changes you've made in the repository to be pushed to remote.
+- Comments will contain terminology, each comment will contain the term with a link to the glossary.
+  > [term](glossary)
 
 ## Notes and Warning Messages
 

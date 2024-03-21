@@ -102,3 +102,12 @@ repository in a single command.
         This script assumes that you're using ```bash``` as your terminal shell. 
         You can change the path from ```#!/bin/bash``` to ```#!/bin/zsh``` for MacOS if you're
         using ```zsh```.
+
+## Conclusion 
+
+In this section you have learned how to:
+
+- Automate Git commands in order to push local to repository
+    - For Windows, MacOS and Linux   
+
+Congrats, you made it through! ✅
