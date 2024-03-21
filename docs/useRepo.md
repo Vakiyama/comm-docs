@@ -228,4 +228,16 @@ commands:
  3. Run ```git push```. Your changes should now be up to date with your local machine on
      remote!
 
+    !!! warning
+        If you see the following output:
+        ```
+        git push
+        To https://github.com/your-username/notes
+         ! [rejected]        main -> main (fetch first)
+        error: failed to push some refs to 'https://github.com/your-username/notes.git
+        ```
+        You have forgotten to fetch and pull before adding notes or commiting them. This
+        is okay and will happen often. See [troubleshooting]() for help.
+
+
 ## Using a script
