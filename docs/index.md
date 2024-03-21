@@ -1,6 +1,7 @@
 # Introduction
 
-Welcome🙌 This documentation will guide you through how to set up a [GitHub](https://github.com/) repository. The goal of this documentation is to provide clear and easy instructions, ensuring that anyone regardless of their level of experience on [GitHub](https://github.com/) can easily follow through this guide. In addition to the setup process, we will also focus on best practices while using a [shell](./glossary.md) and a script that can automate common GitHub processes for you.
+Welcome 🙌 This documentation will guide you through how to set up a [GitHub](https://github.com/) repository. 
+The goal of this documentation is to provide clear and easy instructions, ensuring that anyone regardless of their level of experience on [GitHub](https://github.com/) can easily follow through this guide. In addition to the setup process, we will also focus on best practices while using a [shell](./glossary.md) and a script that can automate common GitHub processes for you.
 
 > :material-github: [GitHub](https://github.com/) is a web-based platform designed to streamline version control and collaboration for software development projects.
 > Developers can efficiently manage and track changes in their code, foster collaboration with team members, and conveniently host their repositories online.
