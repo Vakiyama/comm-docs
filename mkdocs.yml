@@ -3,11 +3,14 @@ theme:
   icon:
     repo: fontawesome/brands/material/git
   name: material
+  footer:
+    text: "Copyright © 2024 - Armaan Brar, Vitor Akiyama, and Byron Dray"
   features:
     # - navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.tabs.link
