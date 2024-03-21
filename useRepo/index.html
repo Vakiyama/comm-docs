@@ -1,0 +1,858 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../initializeRepo/">
+      
+      
+        <link rel="next" href="../usingScript/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+    
+    
+      
+        <title>Using Repository - GitHub Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.10ba22f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-use-your-repository" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GitHub Documentation" class="md-header__button md-logo" aria-label="GitHub Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GitHub Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Using Repository
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GitHub Documentation" class="md-nav__button md-logo" aria-label="GitHub Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    GitHub Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initializeRepo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initialize Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Using Repository
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Using Repository
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview-and-theory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview and theory
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#directory-structure-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Directory structure recommendations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pulling-changes-from-remote" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pulling changes from remote
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pulling changes from remote">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigate-to-your-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigate to your repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-for-new-changes-on-remote-using-fetch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Check for new changes on remote using fetch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-your-newly-fetched-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pull your newly fetched changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pushing-changes-to-remote" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pushing changes to remote
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pushing changes to remote">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#navigate-to-your-repository_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigate to your repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consider-what-you-want-to-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consider what you want to sync
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-your-new-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add your new changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usingScript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Script
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="how-to-use-your-repository">How to use your repository</h1>
+<h2 id="overview-and-theory">Overview and theory</h2>
+<p>GitHub will be acting as a central backup to sync all of your school
+related projects, notes and materials you will collect throughout the
+program.</p>
+<p>There are two places your notes will exist, your <strong>local</strong> and <strong>remote</strong>
+repositories.</p>
+<ul>
+<li>
+<p>Your local repository will store any of the changes and work on your
+  local computer.</p>
+</li>
+<li>
+<p>The remote repository is where we will save backups and changes to keep
+  things synced across your different devices, and is found on GitHub.</p>
+</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Although we will be using GitHub for this guide, one could choose to use GitLab
+or any alternative Git repository. One could potentially host their own repository if they'd like,
+but that will be outside the scope of this guide.</p>
+</div>
+<p>Whenever you are edititing your notes, we need to follow the following
+high level procedure:</p>
+<ol>
+<li>Syncing and updating your local with remote - <strong>pulling</strong> changes</li>
+<li>Updating your remote with new changes from your local - <strong>pushing</strong> changes</li>
+</ol>
+<p>By making sure we always <strong>pull</strong> any changes from our other devices onto
+our local device before we start any work, and that we <strong>push</strong> what we've
+done when we finish working, we'll make sure our notes are seamlessly synced
+across our devices.</p>
+<h2 id="directory-structure-recommendations">Directory structure recommendations</h2>
+<p>If you have your own organizational system for your notes folders, feel
+free to skip this section.</p>
+<p>When starting out the program or any large project, it can be tempting to
+setup your folders pre-emptively based on the classes and assignments you
+will have.</p>
+<p>Our recommendation is that you add folders for notes, labs and assignments
+only when you will be adding new files to them.</p>
+<p>We recommend this approach for two reasons:</p>
+<ol>
+<li>Git will not keep track of empty folders. Tracking an empty folder like
+   this is possible by adding a hidden ".gitkeep" file to each, but this
+   can be come cumbersome quickly. </li>
+<li>You may find that your notes become difficult to navigate and keep
+   track with Git if a large amount of files are present at all times. To
+   learn how to use this new system, it is best that things are kept as
+   simple as possible initially.</li>
+</ol>
+<h2 id="pulling-changes-from-remote">Pulling changes from remote</h2>
+<p>Let's assume you've worked on a project under
+<code>notes/intro-to-programming/project.js</code> in class and you would like to
+continue working on it from home.</p>
+<p>Logging onto your home computer, we would do the following steps before we
+begin work:</p>
+<h3 id="navigate-to-your-repository">Navigate to your repository</h3>
+<ol>
+<li>Open up your terminal, running bash or a shell equivalent.</li>
+<li>Navigate to your notes directory. Your shell should look something like:
+<code>$ path/to/your/notes (main)</code></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can use a combination of <code>ls</code> and <code>cd</code> to change into your notes directory, but this is
+outside the scope of this guide.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>See <a href="../troubleshooting/#navigating-to-directory-using-cd-and-ls">troubleshooting</a> if you're having trouble navigating to your notes directory.</p>
+</div>
+<h3 id="check-for-new-changes-on-remote-using-fetch">Check for new changes on remote using fetch</h3>
+<ol>
+<li>Run <code>git fetch</code></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>git fetch</code> may have no output. This will happen if there are no new changes and
+is normal. You can proceed to the next step in this case.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>The following is an example of success output of the <code>git fetch</code> 
+command if new changes were found on the remote repository:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$ path/to/your/notes (main) git fetch
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>remote: Enumerating objects: 13, done.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>remote: Counting objects: 100% (13/13), done.
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>remote: Compressing objects: 100% (6/6), done.
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>remote: Total 9 (delta 3), reused 9 (delta 3), pack-reused 0
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Unpacking objects: 100% (9/9), 2.93 KiB | 2.93 MiB/s, done.
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>From https://github.com/your-username/notes
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>   4a30534..37487b7  main       -&gt; origin/main
+</span></code></pre></div></p>
+</div>
+<h3 id="pull-your-newly-fetched-changes">Pull your newly fetched changes</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>git pull</code> may output: 
+<code>Already up to date</code>
+This signifies that no changes were pulled from remote and you're all synced up.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>The following is an example of success output of the <code>git pull</code> 
+command if new changes were found on the remote repository:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$ path/to/your/notes (main) git pull
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Updating 7a32534..37eb7b7
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Fast-forward
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> intro-to-programming/project.js | 68 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a> 1 file changed, 68 (+) insertions
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a> create mode 100644 docs/initializeRepo.md
+</span></code></pre></div></p>
+</div>
+<p>You're good to go! Once you finish working, make sure to follow the <em>Pushing changes to remote</em>
+section of this guide to keep things synced up.</p>
+<h2 id="pushing-changes-to-remote">Pushing changes to remote</h2>
+<p>Let's assume you've finished working on a project
+<code>notes/intro-to-programming/project.js</code> at home and would like to make sure
+you sync up your progress for the next time you work on it in class.</p>
+<p>Logging onto your home computer, we would do the following steps before we
+begin work:</p>
+<h3 id="navigate-to-your-repository_1">Navigate to your repository</h3>
+<ol>
+<li>Open up your terminal, running bash or a shell equivalent.</li>
+<li>Navigate to your notes directory. Your shell should look something like:
+<code>$ path/to/your/notes (main)</code></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can use a combination of <code>ls</code> and <code>cd</code> to change into your notes directory, but this is
+outside the scope of this guide.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>See <a href="../troubleshooting/#navigating-to-directory-using-cd-and-ls">troubleshooting</a> if you're having trouble navigating to your notes directory.</p>
+</div>
+<h3 id="consider-what-you-want-to-sync">Consider what you want to sync</h3>
+<p>When using Git, we can specify what we would like Git to track using a <code>.gitignore</code> file.
+In a <code>.gitignore</code> file, we can specify a series of file paths. Any files found at these
+paths will be ignore by Git when you're adding your changes to remote.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><code>.gitignore</code> is often used in order to keep our secrets, such as passwords and
+sensitive information secure by not adding them to GitHub. This is especially imporant
+when using a public repository, where anyone could see your notes.</p>
+</div>
+<p>In most cases, you'd like to push everything in your repository. </p>
+<p>There are some cases where you may want to add files to your <code>.gitignore</code>.</p>
+<p>Since this should be a private repository, we can be less secure about our secrets and passwords,
+although it can be good practice to ignore them either way.</p>
+<p>It's also important that we add large files to our <code>.gitignore</code>. GitHub has a file size
+limit, and even if we aren't hitting the limit, syncing large videos and images can take an extremely
+amount of time.d</p>
+<p>Let's say we have a file <code>secrets.txt</code> where we store sensitive data, and it is located in at
+<code>notes/intro-to-programming/secrets.txt</code>.</p>
+<p>We also have a large video file <code>large-video.mp4</code> located at
+<code>notes/intro-to-programming/large-video.mp4</code>.</p>
+<p>Let's setup Git so that these files are ignored by default.</p>
+<ol>
+<li>Create a new .gitignore file at <code>notes/intro-to-programming/.gitignore</code></li>
+<li>In the .gitignore file, add the following:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>secrets.txt # sensitive data
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>large-video.mp4 # too large!
+</span></code></pre></div></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>.gitignore</code> files have multiple paths! Let's say we have a lot of secrets:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>secrets.txt 
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>large-video.mp4
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>evenMoreSecrets.txt
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>tooManySecrets.txt
+</span></code></pre></div></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Although this protects these files from being on our repository, they won't be synced
+up across our different devices, as they won't be placed on our remote. For this reason,
+having a private repository can make secret handling much easier, but large files are still
+problematic.</p>
+</div>
+<h3 id="add-your-new-changes">Add your new changes</h3>
+<p>At this point, it's good to have a mental checklist before we start adding and pushing our changes.</p>
+<ol>
+<li>Make sure you've pulled any changed from remote first. Git will not let
+   you continue otherwise. See the section <a href="#pulling-changes-from-remote">pulling changes from
+   remote</a> for details.</li>
+<li>You've considered if there's anything you'd like to keep secret, and
+   you <code>.gitignore</code> file is setup accordingly.</li>
+<li>We are in the right location in our terminal. We should be in the same
+   place as where you ran <code>git init</code> when first creating your
+   repository, or the place where you ran <code>git clone</code> to pull down
+   your repository onto a new computer.</li>
+</ol>
+<p>To add our changes and push them to remote, we can run the following
+commands:</p>
+<ol>
+<li>
+<p>Run <code>git add .</code></p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p><code>git add .</code> will have no output, but it will prepare any changes 
+you've made in the repository to be pushed to remote. If you'd like
+to see some confirmation that this action succeded, run <code>git status</code>
+and look for <strong>Changes to be commited:</strong></p>
+</div>
+</li>
+<li>
+<p>Run <code>git commit -m "some commit message"</code></p>
+<p>Replace <code>"some commit message"</code> with something that describes the new changes. 
+Commit messages shine when working collaboratively, and may not be as useful
+in this context. </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In the <a href="../usingScript/">using a script</a> section we
+solve this commit message problem by automatically including a commit message based on the date.</p>
+</div>
+</li>
+<li>
+<p>Run <code>git push</code>. Your changes should now be up to date with your local machine on
+     remote!</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you see the following output:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git push
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>To https://github.com/your-username/notes
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a> ! [rejected]        main -&gt; main (fetch first)
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>error: failed to push some refs to &#39;https://github.com/your-username/notes.git
+</span></code></pre></div>
+You have forgotten to fetch and pull before adding notes or commiting them. This
+is okay and will happen often. See <a href="../troubleshooting/#missing-credentials">troubleshooting</a> for help.</p>
+</div>
+</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>In this section you have learned how to:</p>
+<ul>
+<li>Pulling changes from remote</li>
+<li>Pushing changes to remote repository</li>
+<li>Navigating folders and directories</li>
+<li>Using Git commands </li>
+</ul>
+<p>Nice work! ✅ You can now move onto the next section, <a href="../usingScript/">Using a script to automate note syncing</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../initializeRepo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Initialize Repository">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Initialize Repository
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../usingScript/" class="md-footer__link md-footer__link--next" aria-label="Next: Using Script">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Using Script
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "toc.integrate", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+    
+  </body>
+</html>
