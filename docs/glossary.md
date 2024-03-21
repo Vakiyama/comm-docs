@@ -5,7 +5,7 @@
 | **cd**          | The Change directory command is used to navigate between directories in a file system.|
 | **git**         | Git is a distributed version control system used to track changes in source code during software development. |
 | **ls**          | The List command is used to display a list of files and directories in the current directory. |
-| **la** | The List all directory command lists all files and directories in the current directory including files that are not displayed by default scuh as hidden files. |
+| **ls -a** | The List all directory command lists all files and directories in the current directory including files that are not displayed by default scuh as hidden files. |
 | **local repository**        | A copy of your Git repository that resides on the local computer, this contains all files, changes and commites of the project. |
 | **remote repository**        | A repository that is hosted on a remote server, such as GitHub. This is used as a location where developers can share changes and collaborate.    |
 | **repository** |  The central location where files and resources are stored and managed.8 |

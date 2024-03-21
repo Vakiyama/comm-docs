@@ -45,3 +45,29 @@ Attempting to push your work to GitHub without first fetching and pulling the ch
 ## Navigating to directory using `cd` and `ls`
 
 If you're encountering difficulties using cd (change directory) and ls (list directory contents) to navigate to your desired location, this section offers guidance to diagnose and solve common issues.
+
+## Missing credentials
+
+If git is repeatedly asking you to enter a username or password, or it complains
+that it doesn't know who you are when commiting to your notes repository, we need to do some additional
+setup.
+
+### Recommended Solution
+
+```
+# Run the following commands to set up your identity
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+This will make sure your commit command can run correctly. Then:
+
+```
+# Run the following command to automatically save your username and password
+# when using git.
+git config --global credential.helper store
+```
+
+This will stop GitHub from asking for your credentials everytime you run a pull or push command,
+as well as letting your git related scripts run without trouble.
