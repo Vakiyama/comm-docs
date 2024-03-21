@@ -50,8 +50,8 @@ We recommend this approach for two reasons:
    can be come cumbersome quickly. 
 2. You may find that your notes become difficult to navigate and keep
    track with Git if a large amount of files are present at all times. To
-   learn how to use this new system, it would be advisable that things are
-   kept as simple as possible.
+   learn how to use this new system, it is best that things are kept as
+   simple as possible initially.
 
 ## Pulling changes from remote
 
@@ -97,8 +97,6 @@ begin work:
     ```
     
 ### Pull your newly fetched changes
-
-1. Run ```git pull``` 
 
 !!! info
     ```git pull``` may output: 
@@ -149,7 +147,7 @@ paths will be ignore by Git when you're adding your changes to remote.
 !!! warning
     ```.gitignore``` is often used in order to keep our secrets, such as passwords and
     sensitive information secure by not adding them to Github. This is especially imporant
-    when using a public repository, where anyone could see your pushed changes.
+    when using a public repository, where anyone could see your notes.
 
 In most cases, you'd like to push everything in your repository. 
 
@@ -184,6 +182,7 @@ large-video.mp4 # too large!
     large-video.mp4
     evenMoreSecrets.txt
     tooManySecrets.txt
+    ```
 
 !!! warning
     Although this protects these files from being on our repository, they won't be synced
@@ -194,5 +193,39 @@ large-video.mp4 # too large!
 ### Add your new changes
 
 At this point, it's good to have a mental checklist before we start adding and pushing our changes.
+
+1. Make sure you've pulled any changed from remote first. Git will not let
+   you continue otherwise. See the section [pulling changes from
+   remote](#pulling-changes-from-remote) for details.
+2. You've considered if there's anything you'd like to keep secret, and
+   you ```.gitignore``` file is setup accordingly.
+3. We are in the right location in our terminal. We should be in the same
+   place as where you ran ```git init``` when first creating your
+   repository, or the place where you ran ```git clone``` to pull down
+   your repository onto a new computer.
+
+To add our changes and push them to remote, we can run the following
+commands:
+
+1. Run ```git add .```
+
+    !!! Success
+        ```git add .``` will have no output, but it will prepare any changes 
+        you've made in the repository to be pushed to remote. If you'd like
+        to see some confirmation that this action succeded, run ```git status```
+        and look for **Changes to be commited:**
+
+2. Run ```git commit -m "some commit message"```
+    
+    Replace ```"some commit message"``` with something that describes the new changes. 
+    Commit messages shine when working collaboratively, and may not be as useful
+    in this context. 
+
+    !!! info
+        In the [using a script](./using-a-script.md) section we
+        solve this commit message problem by automatically including a commit message based on the date.
+
+ 3. Run ```git push```. Your changes should now be up to date with your local machine on
+     remote!
 
 ## Using a script
