@@ -39,14 +39,14 @@ Click the `Create repository` button.
 
 ### Navigate to the Source Directory (or create one)
 
-1. Open Git Bash (or another shell) and run `cd <path name>` to navigate to the source directory of your project.
-
-- Example: `cd c:/users/user/bcit/comp1310/<directory name>`
+1. Open Git Bash (or another shell) and run `cd <path name>` to navigate to the source directory of your project. 
+   
+    - Example: `cd c:/users/user/bcit/comp1310/<directory name>`
 
 2. If you do not have a source directory for your project, you can create one by running:
 
-- `mkdir <folder name>`
-- Make sure to `cd` into the directory after you create it
+    - `mkdir <folder name>`
+    - Make sure to `cd` into the directory after you create it
 
 ## Push Your Project to GitHub
 
@@ -56,7 +56,7 @@ If you have a local repository to push:
 
 !!! warning "Warning"
 
-      Make sure you are in the source directory of your project before running the next command. Failing to do so could hinder your conputers performance. If you made this mistake find a solution in the troubleshooting section.
+      Make sure you are in the source directory of your project before running the next command. Failing to do so could hinder your conputers performance. If you made this mistake find a solution in the [troubleshooting](troubleshooting.md) section.
 
 ```sh
 # Initialize your local directory as a Git repository

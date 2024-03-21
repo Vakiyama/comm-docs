@@ -1,0 +1,3 @@
+| Symptom                          | Probable Cause                        | Recommended Action                                                                                                            |
+| -------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Computer feels slower than usual | Ran `git init` in the wrong directory | `cd` into the folder that you mistakenly ran `git init` and run `rmdir /s .git` on Windows or `rm -rf .git` on macOS or Linux |
