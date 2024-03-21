@@ -47,21 +47,21 @@ If you accidentally added the wrong remote URL, check out the [troubleshooting](
 In this documentation, message blocks will be used to inform you of important information. These message blocks are ranked in decending order of importance.
 
 !!! danger
-This is a danger message block.
+    This is a danger message block.
 
     Make sure to pay close attention to the information provided here.
 
 !!! warning
-This is a warning message block.
+    This is a warning message block.
 
     Please take the necessary precautions based on the information provided.
 
 !!! info
-This is an information message block.
+    This is an information message block.
 
     Pay attention to the details provided here for additional information.
 
 !!! success
-This is a success message block.
+    This is a success message block.
 
     :white_check_mark: Celebrate! :white_check_mark:
