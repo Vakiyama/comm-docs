@@ -48,7 +48,7 @@ The order in which to follow this documentation:
 
     ```git add .``` will have no output, but it will prepare any changes you've made in the repository to be pushed to remote.
 - Comments will contain terminology, each comment will contain the term with a link to the glossary.
-  > [term](glossary)
+  > [term](./glossary.md)
 
 ## Notes and Warning Messages
 

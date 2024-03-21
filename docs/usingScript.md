@@ -19,7 +19,7 @@ that is barely used.
 
 - Forgetting to fetch before working on notes sucks. It can cause you to rewrite notes,
 and oftentimes will lead to merge conflicts. We detail how to deal with these in
-our [troubleshooting]() section, but it would be nice if we could avoid this headache
+our [troubleshooting](./troubleshooting.md#pushing-without-fetching-changes) section, but it would be nice if we could avoid this headache
 all together.
 
 We'll use a script that will automate the entire pulling and pushing process for us, avoiding most of these
