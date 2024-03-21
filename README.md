@@ -1,9 +1,15 @@
 # GitHub Documentation
 
-This documentation will guide you through how to initialize and use your repository. We have provided a troubleshooting section and glossary to offer additional support throughout the guide. There is also a section on how to use a script that can automate some of the steps in the previous sections.
+User documentation aiming to assist with set up and daily use of a GitHub repository.
 
-By the end of this guide you will know how to:
+The documentation is aimed at students and assumes that the repository will be used
+in order to keep school related notes and projects synced across multiple computers, such as
+a home computer and a laptop.
 
-- Initialize a repository
-- Use repository
-- Automate GitHub commands to push local changes to remote
+The documentation outlines how to initialize a repository and how to use it regularly. 
+
+We also include a part that details how one could use a provided script to improve aspects
+of the recurring GitHub workflow to remove tedious and repetitive steps.
+
+Writing assumes that the intended audience are new full stack development students that have not used
+GitHub.
