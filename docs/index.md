@@ -41,20 +41,6 @@ git init
 - Comments will contain terminology, each comment will contain the term with a Link to the glossary
   > [term]()
 
-## Quick Usage
-
-For those experienced in setting up repositories:
-
-```
-echo "# example" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/<username>/example.
-git push -u origin main
-```
-
 ## Notes and Warning Messages
 
 In this documentation, message blocks will be used to inform you of important information. These message blocks are ranked in decending order of importance.
