@@ -114,7 +114,7 @@ git commit -m "First commit"
         to set your account's default identity.
         Omit --global to set the identity only in this repository.
         ```
-    It's likely you haven't used git before. See [troubleshooting](../troubleshooting#missing-credentials) for details.
+    It's likely you haven't used git before. See [troubleshooting](troubleshooting.md#missing-credentials) for details.
         
 
 ### Add Remote Origin

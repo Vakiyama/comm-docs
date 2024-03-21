@@ -38,7 +38,7 @@ The order in which to follow this documentation:
 
 ## Typographical Conventions
 
-- Some warning code blocks may have links on the bottom to the [Troubleshooting](troubleshooting) page.
+- Some warning code blocks may have links on the bottom to the [Troubleshooting](troubleshooting.md) page.
 
 !!! warning
     If you accidentally added the wrong remote URL, check out the [troubleshooting](troubleshooting.md#wrong-remote-url) section.
