@@ -2,7 +2,7 @@
 
 ## Overview and theory
 
-Github will be acting as a central backup to sync all of your school
+GitHub will be acting as a central backup to sync all of your school
 related projects, notes and materials you will collect throughout the
 program.
 
@@ -13,10 +13,10 @@ repositories.
   local computer.
 
 - The remote repository is where we will save backups and changes to keep
-  things synced across your different devices, and is found on Github.
+  things synced across your different devices, and is found on GitHub.
 
 !!! info
-    Although we will be using Github for this guide, one could choose to use GitLab
+    Although we will be using GitHub for this guide, one could choose to use GitLab
     or any alternative Git repository. One could potentially host their own repository if they'd like,
     but that will be outside the scope of this guide.
 
@@ -76,10 +76,7 @@ begin work:
 
 ### Check for new changes on remote using fetch
 
-```
-# 
-git fetch
-``` 
+1. Run ```git fetch```
 
 !!! info
     ```git fetch``` may have no output. This will happen if there are no new changes and
@@ -149,7 +146,7 @@ paths will be ignore by Git when you're adding your changes to remote.
 
 !!! warning
     ```.gitignore``` is often used in order to keep our secrets, such as passwords and
-    sensitive information secure by not adding them to Github. This is especially imporant
+    sensitive information secure by not adding them to GitHub. This is especially imporant
     when using a public repository, where anyone could see your notes.
 
 In most cases, you'd like to push everything in your repository. 
@@ -159,7 +156,7 @@ There are some cases where you may want to add files to your ```.gitignore```.
 Since this should be a private repository, we can be less secure about our secrets and passwords,
 although it can be good practice to ignore them either way.
 
-It's also important that we add large files to our ```.gitignore```. Github has a file size
+It's also important that we add large files to our ```.gitignore```. GitHub has a file size
 limit, and even if we aren't hitting the limit, syncing large videos and images can take an extremely
 amount of time.d
 
