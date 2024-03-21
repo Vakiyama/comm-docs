@@ -56,7 +56,7 @@ If you have a local repository to push:
 
 !!! danger "Warning"
 
-      Make sure you are in the source directory of your project before running the next command. Failing to do so could hinder your conputers performance. If you made this mistake find a solution in the [troubleshooting](troubleshooting.md) section.
+      Make sure you are in the source directory of your project before running the next command. Failing to do so could hinder your conputers performance. If you made this mistake find a solution in the [troubleshooting](troubleshooting.md#computer-feels-slower-than-usual) section.
 
 ```bash
 # Initialize your local directory as a Git repository
@@ -114,6 +114,10 @@ git remote add origin <REMOTE_URL>
     You Remote Url is located in your GitHub repository. Copy and paste it into the command below.
 
     ![Remote Url](./assets/images/remoteUrl.png)
+
+!!! warning
+
+    If you accidentally added the wrong remote URL, check out the [troubleshooting](troubleshooting.md#wrong-remote-url) section. 
 
 ### Push Changes to GitHub
 
