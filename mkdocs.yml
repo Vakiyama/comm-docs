@@ -45,3 +45,10 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+nav:
+  - Introduction: index.md
+  - Initialize Repository: initializeRepo.md
+  - Using Repository: useRepo.md
+  - Using Script: usingScript.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
