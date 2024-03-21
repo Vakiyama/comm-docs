@@ -31,15 +31,13 @@ This documentations assumes the following:
 
 ## Typographical Conventions
 
-- Some code blocks may have clickable links that will redirect to the [Troubleshooting](./troubleshooting.md) page.
+- Some warning code blocks may have links on the bottom to the [Troubleshooting](troubleshooting) page.
 
-```
-git init
-```
+!!! warning
+If you accidentally added the wrong remote URL, check out the [troubleshooting](troubleshooting.md#wrong-remote-url) section.
 
-- The success message will display when a command has **no output** in the shell, to help confirm there is no error.
-  
-!!! success
+- The success message may display when a command has **no output** in the shell, to help confirm there is no error.
+  !!! success
 
 - Comments will contain terminology, each comment will contain the term with a Link to the glossary
   > [term]()
@@ -66,4 +64,4 @@ This is an information message block.
 !!! success
 This is a success message block.
 
-    Celebrate
+    :white_check_mark: Celebrate! :white_check_mark:
