@@ -34,11 +34,12 @@ This documentations assumes the following:
 - Some warning code blocks may have links on the bottom to the [Troubleshooting](troubleshooting) page.
 
 !!! warning
-If you accidentally added the wrong remote URL, check out the [troubleshooting](troubleshooting.md#wrong-remote-url) section.
+    If you accidentally added the wrong remote URL, check out the [troubleshooting](troubleshooting.md#wrong-remote-url) section.
 
 - The success message may display when a command has **no output** in the shell, to help confirm there is no error.
-  !!! success
+!!! success
 
+    ```git add .```will have no output, but it will prepare any changes you've made in the repository to be pushed to remote.
 - Comments will contain terminology, each comment will contain the term with a Link to the glossary
   > [term]()
 
