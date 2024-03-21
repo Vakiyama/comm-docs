@@ -1,12 +1,12 @@
 # Introduction
 
-Welcome🙌 This documentation will guide you through how to set up a [GitHub](https://github.com/) repository. The goal of this documentation is to provide clear and easy instructions, ensuring that anyone regardless of their level of experience on [GitHub](https://github.com/) can easily follow through this guide. In addition to the setup process, we will also focus on tips and best practices while using a [shell]().
+Welcome🙌 This documentation will guide you through how to set up a [GitHub](https://github.com/) repository. The goal of this documentation is to provide clear and easy instructions, ensuring that anyone regardless of their level of experience on [GitHub](https://github.com/) can easily follow through this guide. In addition to the setup process, we will also focus on best practices while using a [shell](./glossary.md) and a script that can automate common GitHub processes for you.
 
 > :material-github: [GitHub](https://github.com/) is a web-based platform designed to streamline version control and collaboration for software development projects.
 > Developers can efficiently manage and track changes in their code, foster collaboration with team members, and conveniently host their repositories online.
 
-> [Shell]() is a program where command can be used to search for files and directories that are stored on the computer. The shell can also be used for various other activites.
-> We will use the shell to set up a repository.
+> [Shell](./glossary.md) is a program where commands can be used to search for files and directories that are stored on the computer. The shell can also be used for a variety of tasks.
+> In this documentation we will use the shell to run commands that will set up a repository on GitHub.
 
 ## Intended Users
 
@@ -27,15 +27,18 @@ This documentations assumes the following:
 
 - [Visual Studio Code](https://code.visualstudio.com/download) or any other code editor
 - [GitHub](https://github.com/) Account
-- A [Shell]() such as [git bash](https://git-scm.com/downloads) for Windows and Linux or alternatively [zsh]().
+- A [Shell](./glossary.md) such as [git bash](https://git-scm.com/downloads) for Windows and Linux or alternatively [zsh](https://ohmyz.sh/).
 
 ## Typographical Conventions
 
-- Some code blocks may have clickable links that will redirect to the [Troubleshooting](Troubleshoot) page.
+- Some code blocks may have clickable links that will redirect to the [Troubleshooting](./troubleshooting.md) page.
+
 ```
-git init 
+git init
 ```
+
 - The success message will display when a command has **no output** in the shell, to help confirm there is no error.
+  
 !!! success
 
 - Comments will contain terminology, each comment will contain the term with a Link to the glossary
@@ -46,21 +49,21 @@ git init
 In this documentation, message blocks will be used to inform you of important information. These message blocks are ranked in decending order of importance.
 
 !!! danger
-    This is a danger message block.
+This is a danger message block.
 
     Make sure to pay close attention to the information provided here.
 
 !!! warning
-    This is a warning message block.
+This is a warning message block.
 
     Please take the necessary precautions based on the information provided.
 
 !!! info
-    This is an information message block.
+This is an information message block.
 
     Pay attention to the details provided here for additional information.
 
 !!! success
-    This is a success message block.
+This is a success message block.
 
     Celebrate
